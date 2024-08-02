@@ -18,7 +18,7 @@ const makeRequest = async () => {
   try {
     await axios({
       method: "post",
-      url: "http://localhost:3000"
+      url: "http://127.0.0.1:3000"
     });
 
     console.log("First request worked");
@@ -37,7 +37,7 @@ const makeRequest = async () => {
 
     await axios({
       method: "post",
-      url: "http://localhost:3000"
+      url: "http://127.0.0.1:3000"
     });
 
     console.log("It crashes before it gets here");
