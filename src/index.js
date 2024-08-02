@@ -22,6 +22,7 @@ app.whenReady().then(() => {
   })
 
   const server = http.createServer((req, res) => {
+    console.log("Request received")
     res.statusCode = 200
     res.setHeader('Content-Type', 'text/plain')
     res.end('Hello, World!\n')
